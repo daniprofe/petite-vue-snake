@@ -1,0 +1,84 @@
+#snake-title {
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    color: #6c6cc1;
+}
+
+#snake-subtitle {
+    font-size: 1.6em;
+    text-align: center;
+    color: #4e9351;
+}
+
+#snake-status {
+    width: 100%;
+    background-color: #f1fbf1;
+    padding: 0 0.8em;
+}
+
+#snake-puntuation,
+#snake-level,
+#snake-length
+{
+    width: 33%;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4e9351;
+}
+
+#snake-puntuation {
+    text-align: right;
+}
+
+#snake-length {
+    text-align: center;
+}
+
+#snake-gameover {
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    background-color: #fde7e7;
+    margin: 0.6em 6em;
+}
+
+#snake-newgame-button-container {
+    text-align: center;
+    margin: 1.2em;
+}
+
+#snake-newgame-button {
+    border: 4px solid #7d7dc9;
+    background-color: #52d1d1;
+    color: white;
+    padding: 0.4em;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+#snake-board {
+    padding: 1.2em;
+    background-color: #def3ff;
+    margin: 1em 0;
+}
+
+#snake-board td {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+#snake-board td.empty {
+    background-color: #d1e8f5;
+}
+
+#snake-board td.snake {
+    background-color: blue;
+}
+
+#snake-board td.apple {
+    background-color: orange;
+}

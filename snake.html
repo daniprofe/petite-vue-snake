@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="module" src="snake.js"></script>
+        <link href="snake.css" rel="stylesheet">
+        <title>Snake</title>
+    </head>
+    <body>
+        <div v-scope @vue:mounted="startNewGame">
+            <div id="snake-title">SNAKE</div>
+            <div id="snake-subtitle">by Daniprofe</div>
+            <table id="snake-board">
+                <tbody>
+                    <tr v-for="(row, y) in board">
+                        <td v-for="(cell, x) in row" :data-coords="x + '-' + y" :class="cell"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <table id="snake-status">
+                    <tbody>
+                        <tr>
+                            <td id="snake-level">LEVEL {{level}}</td>
+                            <td id="snake-length">LENGTH: {{snake.body.length}} - FPS: {{fps}}</td>
+                            <td id="snake-puntuation">{{puntuation}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="snake-gameover" v-if="gameover">GAME OVER</div>
+                <div id="snake-newgame-button-container" v-if="gameover">
+                    <button id="snake-newgame-button" @click="startNewGame">Play again!</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
